@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refinite Constructions</title>
+  <link rel="stylesheet" href="/css.bootsrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    ul li {
+      list-style-type: none;
+      animation: slideIn 0.6s ease forwards;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: rgb(53, 175, 206);
+      text-decoration: underline;
+    }
+
+    ul {
+      display: flex;
+      gap: 40px;
+    }
+
+    .jjj {
+      display: flex;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+    }
+
+    header {
+      background-image: url("/stefan-hiienurm-2EgYygoXNgw-unsplash.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      font-size: 1.5rem;
+    }
+
+    header h1 {
+      color: white;
+      animation: pulse 3s infinite;
+    }
+
+    header p {
+      color: white;
+    }
+
+    .uuu {
+      text-align: center;
+      margin-top: 300px;
+      font-size: 3rem;
+    }
+
+    .uuu h1, .uuu p {
+      animation: zoomIn 0.7s ease-out forwards;
+    }
+
+    .jd1 {
+      text-align: center;
+      border: 0.5px solid grey;
+      margin: 30px;
+      border-radius: 20px;
+      padding: 15px;
+      font-size: inherit;
+      animation: fadeInUp 0.8s ease-out;
+      font-size: 2rem;
+    }
+
+    .js {
+      display: flex;
+      gap: 40px;
+     
+    }
+
+    .js1 {
+      border-radius: 30px;
+      text-align: center;
+      padding: 20px;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .js img {
+      width: auto;
+      height: auto;
+    }
+
+    .js1 img {
+      width: 100px;
+      height: 120px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .js1 img:hover {
+      padding: 5px;
+    }
+
+    .imgall {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .imgall img {
+      width: 450px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      animation: fadeInUp 0.8s ease-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .imgall img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .jjjj {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .sec1 img{
+      border: 1px solid grey;
+      box-shadow: 0px 1px 5px 1px grey; 
+    }
+    .site-footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #d1d5db;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .column h4 {
+    color: #fbbf24;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .column ul li {
+    margin-bottom: 8px;
+    color: #e5e7eb;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #9ca3af;
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+  }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <section class="jjj">
+      <h1>Refinite Constructions</h1>
+      <div>
+        <ul>
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/loading about.html">About Us</a></li>
+          <li><a href="/loadingligin.html">LogIn</a></li>
+          <li><a href="/loading clients.html">Clients</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="uuu">
+      <h1>Welcome</h1>
+      <p>In construction, we don't just work with concrete and steel, but with hope and dreams.</p>
+    </section>
+  </header>
+
+  <main>
+    <div class="jd1">
+      <h3>Works</h3>
+      <p>
+        Focuses on delivering projects that meet or exceed established standards and client expectations,
+        ensuring safety, durability, and functionality. It encompasses adherence to design specifications,
+        use of high-quality materials, and implementation of robust quality control and assurance processes.
+        Ultimately, quality construction minimizes future maintenance, reduces costs, and provides a safe and comfortable environment.
+      </p>
+    </div>
+  </main>
+
+  <section class="js">
+      <div class="js1">
+        <img src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/04/process.png" alt="">
+        <h3>Solution Focused</h3>
+        <p>Further progress in the design and manufacture to provide complete piping solution.</p>
+      </div>
+      <div class="js1">
+        <img src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/04/consulting.png" alt="">
+        <h3>Customer Oriented</h3>
+        <p>To offer a customized service and assure value added service to our customers.</p>
+      </div>
+      <div class="js1">
+        <img src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/04/security.png" alt="">
+        <h3>100% Success</h3>
+        <p>Our success rate almost 100% - ensures goal of any type business.</p>
+      </div>
+      <div class="js1">
+        <img src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/04/target.png" alt="">
+        <h3>Prompt Delivery</h3>
+        <p>To expedite prompt deliveries and the expected quality in each dispatch.</p>
+      </div>
+  </section>
+
+  <section class="jjjj">
+    <div class="imgall">
+      <div class="sec1">
+        <img src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img src="https://images.unsplash.com/photo-1655975719898-8f3432eed322?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8" alt="">
+        <img src="https://images.unsplash.com/photo-1622649396178-b56dfd532226?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM1fHx8ZW58MHx8fHx8" alt="">
+        <img src="https://plus.unsplash.com/premium_photo-1723759366079-f92eb0aee298?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D" alt="">
+      </div>
+      <div class="sec1">
+        <img src="https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbnN0cnVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        <img src="https://plus.unsplash.com/premium_photo-1682617326577-b63d6997c007?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM5fHx8ZW58MHx8fHx8" alt="">
+        <img src="https://images.unsplash.com/photo-1611893208029-8bae3dd78bff" alt="">
+        <img src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a" alt="">
+      </div>
+      <div class="sec1">
+        <img src="https://plus.unsplash.com/premium_photo-1681691912442-68c4179c530c" alt="">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd" alt="">
+        <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea" alt="">
+        <img src="https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f" alt="">
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+  <div class="footer-top">
+    <p class="intro">
+      Since its inception in 1997, Refinite Group Builders and Developers have been a forerunner in the field of construction.
+    </p>
+    <div class="footer-columns">
+      <div class="column">
+        <h4>Services</h4>
+        <ul>
+          <li>Construction</li>
+          <li>Approved Valuer</li>
+          <li>Engineering Consultancy</li>
+          <li>Maintenance</li>
+          <li>Interior Design</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Contact Info</h4>
+        <ul>
+          <li>Edu CADD, Neyyattinkara, Thiruvananthapuram</li>
+          <li>refiniteconstructions2025@gmail.com</li>
+          <li>9998988989</li>
+          <li>Refinite Construction</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 All Rights Reserved.</p>
+  </div>
+</footer>
+  <script src="/js.bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>

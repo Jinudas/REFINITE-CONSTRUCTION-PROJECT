@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('/dovlet-hojayev-kVzcxdmHmKU-unsplash.jpg') no-repeat center center fixed;
+      background-size: cover;
+      
+    }
+    .main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      width: 90%;
+      max-width: 960px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .info-section, .form-section {
+      flex: 1;
+      padding: 30px;
+      min-width: 300px;
+    }
+
+    .info-section {
+      background-color:rgb(17, 63, 103);
+      color: white;
+    }
+
+    .info-section h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .info-section p {
+      line-height: 1.8;
+      font-size:20px ;
+      margin-bottom: 12px;
+    }
+
+    .form-section h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    header{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: auto;
+    }
+    header{
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+    }
+    button {
+      padding: 12px 20px;
+      background-color: #1572A1;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+      background-color: #0f4e75;
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1rem;
+    }
+     footer h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+      color: #e67e22;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a.btn {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      background-image: linear-gradient(to right, #27ae60, #2ecc71);
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    footer a.btn:hover {
+      transform: scale(1.1);
+      background-image: linear-gradient(to right, #2ecc71, #27ae60);
+    }
+
+    .row0 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin: 10px 0;
+    }
+
+    .row1 {
+      margin: 0;
+    }
+
+    .jd2, .jd3 {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Refinite Constructions</h1>
+    </header>
+    <section class="main">
+  <div class="contact-wrapper">
+    <div class="info-section">
+      <h2>Refinite Constructions</h2>
+      <p><strong>BuildRight Construction Pvt. Ltd.</strong></p>
+      <p>321 Concrete Lane, Neyyattinkara, Kerala</p>
+      <p>Phone: +91 99999 12345</p>
+      <p>Email: contact@buildright.co.in</p>
+      <p>Working Hours: Mon–Fri, 9am–6pm</p>
+    </div>
+    <div class="form-section">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email address" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="Your phone number" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Type your message"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+    </section>
+    <footer>
+         <div class="jd1">
+            <h1>Refinite</h1>
+            <h1>Constructions</h1>
+        </div>
+        <p>T H I N K    B E Y O N D    B U S I N E S S</p>
+        <a class="btn" href="/loadingligin.html">Log In></a>
+        <div class="jd2">
+            <p>📧 Refinite constructions@gmail.com</p>
+            <div class="row0">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="" width="20px">
+                <p class="row1">Refinite constructions</p>
+            </div>
+            <p>ph:9999666610</p>
+        </div>
+        <div class="jd3">
+            <p>Company</p>
+            <p>EDU CAD Neyyatinkara, Bangalore</p>
+        </div>
+    </footer>
+    </footer>
+</body>
+</html>

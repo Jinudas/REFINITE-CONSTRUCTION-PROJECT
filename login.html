@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }   
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+             color: rgb(255, 255, 255);
+        }
+        .wrap {
+            background: transparent;
+            border: 2px solid rgb(255, 255, 255);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            width: 420px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .inputb {
+            width: 100%;
+            height: 50px;
+            margin: 20px 0;
+
+        }
+        .inputb input {
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 40px;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .btn {
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-radius: 40px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .remem {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        #timer {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h1{
+            color: black;
+        }
+        p{
+            color: black;
+        }
+        label{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form onsubmit="startLogin(event)">
+            <h1>Login</h1>
+            <div class="inputb">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="inputb">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="remem">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p id="timer"></p>
+            <div class="reg">
+                <p>Don't have an account? <a href="/home.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function startLogin(event) {
+            event.preventDefault(); 
+            
+            let countdown = 5;
+            const timerDisplay = document.getElementById("timer");
+            timerDisplay.textContent = `Redirecting in ${countdown} seconds...`;
+            
+            const intervalId = setInterval(() => {
+                countdown--;
+                if (countdown > 0) {
+                    timerDisplay.textContent = `Redirecting in ${countdown} seconds...`;
+                } else {
+                    clearInterval(intervalId);
+                    timerDisplay.textContent = "Time's up!";
+                    setTimeout(() => {
+                        window.location.href = "gggg.html"; 
+                    }, 1000);
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
